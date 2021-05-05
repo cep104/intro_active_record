@@ -17,5 +17,19 @@
 - Discuss altering databases and models with further migrations, rollbacks
 [Active Record Docs](http://guides.rubyonrails.org/active_record_basics.html)
 
+Movie
+belong_to a genre => genre_ids (foreign key)
+belong_to a director => director_id (foreign key)
+
+Director 
+director has_many movies
+
+Genre 
+genre has_many movies
+
+- single source of truth 
+- column size can get crazy 
+
+
 
 
