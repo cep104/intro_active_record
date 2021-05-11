@@ -34,6 +34,7 @@ GEM
       rack (>= 1.0)
     rake (13.0.3)
     require_all (3.0.0)
+<<<<<<< HEAD
     ripl (0.7.1)
       bond (~> 0.5.1)
     ripl-multi_line (0.3.1)
@@ -42,6 +43,8 @@ GEM
       rack (>= 1.0)
       rack-test (~> 0.6.2)
       ripl (>= 0.7.0)
+=======
+>>>>>>> 279d67a38f7d9a9e0a0a2bc7a4b5d4470377a873
     ruby2_keywords (0.0.4)
     shotgun (0.9.2)
       rack (>= 1.0)
@@ -76,8 +79,11 @@ DEPENDENCIES
   pry
   rake
   require_all
+<<<<<<< HEAD
   shotgun
   sinatra
+=======
+>>>>>>> 279d67a38f7d9a9e0a0a2bc7a4b5d4470377a873
   sinatra-activerecord
   sqlite3
   thin

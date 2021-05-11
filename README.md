@@ -17,8 +17,25 @@
 - Discuss altering databases and models with further migrations, rollbacks
 [Active Record Docs](http://guides.rubyonrails.org/active_record_basics.html)
 
+<<<<<<< HEAD
 Movie belong_to a director ------> director_id
 Movie belong_to a genre --------> genre_id
+=======
+Movie
+belong_to a genre => genre_ids (foreign key)
+belong_to a director => director_id (foreign key)
+
+Director 
+director has_many movies
+
+Genre 
+genre has_many movies
+
+- single source of truth 
+- column size can get crazy 
+
+
+>>>>>>> 279d67a38f7d9a9e0a0a2bc7a4b5d4470377a873
 
 -just based off of these two things what is pieces I would need to add to my table? 
     -foreign key => director_id and genre_id
