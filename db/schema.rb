@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_04_224310) do
+ActiveRecord::Schema.define(version: 2021_05_05_005615) do
+
+  create_table "directors", force: :cascade do |t|
+    t.string "name"
+  end
+
+  create_table "genres", force: :cascade do |t|
+    t.string "name"
+  end
 
   create_table "movies", force: :cascade do |t|
     t.string "title"
@@ -19,6 +27,8 @@ ActiveRecord::Schema.define(version: 2021_05_04_224310) do
     t.boolean "popular"
     t.text "description"
     t.string "rating"
+    t.integer "director_id"
+    t.integer "genre_id"
   end
 
 end

@@ -17,5 +17,16 @@
 - Discuss altering databases and models with further migrations, rollbacks
 [Active Record Docs](http://guides.rubyonrails.org/active_record_basics.html)
 
+Movie belong_to a director ------> director_id
+Movie belong_to a genre --------> genre_id
 
+-just based off of these two things what is pieces I would need to add to my table? 
+    -foreign key => director_id and genre_id
+    - important note the has_many plural / belongs to singular (CONVENTIONS IMPORTANT)
+    - will my director or genre class need to keep track of my movies (need a movie_id?)
+Will need a Director Class
+- has_many movies  
 
+Will need a Genre Class
+
+- has_many movies
