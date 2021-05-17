@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2021_05_05_005615) do
-=======
-ActiveRecord::Schema.define(version: 2021_05_05_221323) do
->>>>>>> 279d67a38f7d9a9e0a0a2bc7a4b5d4470377a873
 
   create_table "directors", force: :cascade do |t|
     t.string "name"
@@ -31,13 +27,8 @@ ActiveRecord::Schema.define(version: 2021_05_05_221323) do
     t.boolean "popular"
     t.text "description"
     t.string "rating"
-<<<<<<< HEAD
     t.integer "director_id"
     t.integer "genre_id"
-=======
-    t.integer "genre_id"
-    t.integer "director_id"
->>>>>>> 279d67a38f7d9a9e0a0a2bc7a4b5d4470377a873
   end
 
 end
