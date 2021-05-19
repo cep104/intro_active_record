@@ -8,8 +8,4 @@ class ApplicationController < Sinatra::Base
         "Welcome!"
       end
 
-      get "/movies" do 
-       @movies = Movie.all
-        erb :movies
-      end
 end
