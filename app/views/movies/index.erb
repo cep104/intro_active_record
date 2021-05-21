@@ -1,6 +1,7 @@
 <h1>MOVIE LIST:</h1>
 <ul>
 <% @movies.each do |m| %>
-<li><%= m.title %></li>
+<%# <a href="">TEXT</a> => how to write a link %>
+<li><a href="/movies/<%=m.id%>"><%= m.title %> </a></li>
 <% end %>
 </ul>
